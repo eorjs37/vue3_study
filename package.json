@@ -32,7 +32,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "vue/require-valid-default-prop":"off"
+    }
   },
   "browserslist": [
     "> 1%",
