@@ -23,8 +23,8 @@
 </template>
 
 <script>
-import { reactive, ref } from 'vue';
-import ChildComponent from './components/ChileComponent.vue';
+import { reactive, ref, onMounted } from 'vue';
+import ChildComponent from '@/components/ChileComponent.vue';
 export default {
   name: 'App',
   components:{
@@ -46,6 +46,10 @@ export default {
         }
       }
     )
+
+    onMounted(()=>{
+      console.log('App onMounted');
+    });
     
     return{
       testData,
