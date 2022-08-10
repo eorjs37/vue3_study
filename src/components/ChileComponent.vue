@@ -19,6 +19,7 @@
 </template>
 
 <script>
+import { onMounted } from 'vue';
 export default {
     props:{
         parentData:{
@@ -34,6 +35,9 @@ export default {
         }
     },
     setup(props){
+        onMounted(()=>{
+            console.log('ChildComponent onMounted');
+        });
         return{
             props
         }
